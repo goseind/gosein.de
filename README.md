@@ -10,7 +10,3 @@ Check out my [GitHub](https://github.com/goseind) or reach out through [LinkedIn
 
 [![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=goseind)](https://github.com/goseind)
 [![My Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=goseind&layout=compact)](https://github.com/goseind)
-
-#### Where else to find me
-* GitLab: @edekadomenic
-* StackOverflow: @goatw
