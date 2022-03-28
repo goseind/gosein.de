@@ -4,15 +4,14 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+### Hi there I'm Domenic 👋
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I'm a Software/Site Reliability Engineer. My tech stack includes Python, Ruby and C. I manage code with Git and Visual Studio Code on Ubuntu Linux and use Docker, Kubernetes, Terraform and GitHub Actions to deploy code to Azure or GCP.  
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+I’m deeply interested in the fundamental laws of nature and my goal is to work in a field where I can contribute to technological progress.
 
-
-[jekyll-organization]: https://github.com/jekyll
+To learn more about me checkout:
+* [My GitHub](https://github.com/goseind)
+* [My LinkedIn](http://www.linkedin.com/in/goseind)
+* [My CV]()
+* [My Blog Posts]()
