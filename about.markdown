@@ -13,5 +13,5 @@ I’m deeply interested in the fundamental laws of nature and my goal is to work
 To learn more about me checkout:
 * [My GitHub](https://github.com/goseind)
 * [My LinkedIn](http://www.linkedin.com/in/goseind)
-* [My CV]()
-* [My Blog Posts]()
+* [My CV]({% link cv.md %})
+* [My Blog Posts]({% link index.markdown %})

@@ -4,3 +4,5 @@
 
 layout: home
 ---
+
+![Blog Banner](Blog_Banner.png)
