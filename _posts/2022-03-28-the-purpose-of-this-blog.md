@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Purpose of this Blog"
+title:  "The purpose of this blog"
 date:   2022-03-28
 categories: general info
 ---

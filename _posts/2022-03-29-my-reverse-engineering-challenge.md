@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My Reverse Engineering Challenge: Broken Password Safe"
+title:  "My reverse engineering challenge: Broken Password Safe"
 date:   2022-03-29
 categories: reverse-engineering c challenge
 ---
