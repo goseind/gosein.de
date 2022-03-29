@@ -13,13 +13,13 @@ Let’s start with the tools we need/can use:
 * [Radare2](https://github.com/radareorg/radare2)
 * [gdb](https://www.sourceware.org/gdb/)
 
-make sure you have the appropriate Java JDK installed. Additonaly you may need a Hex Editor for some challenges, not for mine though.
+Make sure you have the appropriate Java JDK installed. Additionally, you may need a Hex Editor for some challenges, not for mine though.
 
-Now let's start with our analysis. **Note: If you want to first try it yourself I engourage you to just download the `broken_pwsafe` file and go for it!** Otherwhise follow my lead below. 
+Now let's start with our analysis. **Note: If you want to first try it yourself I encourage you to just download the `broken_pwsafe` file and go for it!** Otherwise follow my lead below.
 
-The challange inclduing solution and source files can be found on my GitHub in the [re repo](https://github.com/goseind/re).
+The challenge including solution and source files can be found on my GitHub in the [re repo](https://github.com/goseind/re).
 
-We start with opening the file in gdb which allows us to *savely* run the program and see what it does while having the abbility to stop and look at the current stack anytime. **Please note that for real life situations e. g. maleware analysis it is recommended to use a dedicated VM, which is not conntected to the network in any way!.**
+We start with opening the file in gdb which allows us to *safely* run the program and see what it does while having the ability to stop and look at the current stack anytime. **Please note that for real-life situations e. g. malware analysis it is recommended to use a dedicated VM, which is not connected to the network in any way!.**
 
 ``` bash
 gdb broken_pwsafe 
@@ -56,9 +56,9 @@ Wrong passsword! Abord.
 (gdb) 
 ```
 
-So when we rund the file with `r` inside gdb, we get prompted for a password. Let's just enter a random password like `1648568247` and see whats happens. The program responds with and error and tells us a new password has been set for us. Now we just need to enter our new password to access the safe again. The problem is, we don't know the new password and if we enter another random password the program abords. For practical reasons I'll skip more details about gdb for now and pick them up in a later blog post.
+So when we run the file with `r` inside gdb, we get prompted for a password. Let's just enter a random password like `1648568247` and see what happens. The program responds with an error and tells us a new password has been set for us. Now we just need to enter our new password to access the safe again. The problem is, we don't know the new password, and if we enter another random password the program abords. For practical reasons, I'll skip more details about gdb for now and pick them up in a later blog post.
 
-So now we "know" what the program does or rather wants from us, we can use radare2 to disasemble the exectubale in the command line by running the follwing commands:
+So now we "know" what the program does or rather wants from us, we can use radare2 to disassemble the executable in the command line by running the following commands:
 
 ``` bash
 r2 -e bin.cache=true broken_pwsafe
@@ -134,25 +134,25 @@ r2 -e bin.cache=true broken_pwsafe
                                                                        ; 0x3d88
 ```
 
-Usually we look for the *main* function, so we search for it and select it with `s main` then we use `pd` to print the disasembled function. We can now try to figure out what the program does exacly.
+Usually, we look for the *main* function, so we search for it and select it with `s main` then we use `pd` to print the disassembled function. We can now try to figure out what the program does exactly.
 
-Altough radare2 also offers a grapical user interface with [iaito](https://github.com/radareorg/iaito/) we now want to switch to Ghidra and persue the following steps:
+Although radare2 also offers a graphical user interface with [iaito](https://github.com/radareorg/iaito/) we now want to switch to Ghidra and pursue the following steps:
 
-**Step 1: Open Ghidra and create a new poroject, then import the `broken_pwsafe` file and double click it.**
+**Step 1: Open Ghidra and create a new project, then import the `broken_pwsafe` file and double click it.**
 
 ![Ghidra_Step_1](/assets/images/Ghidra_Step_1.png)
 
-**Step 2: Ghidra asks you if you want to analyse the file, click *Yes* and then *Ok*.**
+**Step 2: Ghidra asks you if you want to analyze the file, click *Yes* and then *Ok*.**
 
 ![Ghidra_Step_2](/assets/images/Ghidra_Step_2.png)
 
-**Step 3: Look for the `main` function and click on it. Then you'll already be able to see the source code on the right, in this case.** *(Please note, that in some cases the exceutbale is obfuscted and not that simple to read.)*
+**Step 3: Look for the `main` function and click on it. Then you'll already be able to see the source code on the right, in this case.** *(Please note, that in some cases the executable is obfuscated and not that simple to read.)*
 
 ![Ghidra_Step_3](/assets/images/Ghidra_Step_3.png)
 
-As you may have noticed, the challenge of this Capture the Flag is not accessing or reading the source code *(as we've seen, we can do this quite easily with the above tools)*, but to figure out what the program does and how we can access whats inside the password safe *(the flag)*.
+As you may have noticed, the challenge of this Capture the Flag is not accessing or reading the source code *(as we've seen, we can do this quite easily with the above tools)*, but figuring out what the program does and how we can access what's inside the password safe *(the flag)*.
 
-Below we can see the source code in plain text again, ectracted from Ghidra:
+Below we can see the source code in plain text again, extracted from Ghidra:
 
 ``` c
 void main(void)
@@ -192,15 +192,15 @@ void main(void)
 }
 ```
 
-Interesting to us is the line where the function `pw_generator` is called, because we notice that the variable `local_50` is used there and also shared with the user in the following `printf("%ld\n",local_50);` statement.
+Interesting to us is the line where the function `pw_generator` is called because we notice that the variable `local_50` is used there and also shared with the user in the following `printf("%ld\n",local_50);` statement.
 
-If we then checkout the `pw_generator` function in Ghidra and see that is uses the `rand()` function in C to generate a random value, which is then used for our new password.
+If we then check out the `pw_generator` function in Ghidra and see that it uses the `rand()` function in C to generate a random value, which is then used for our new password.
 
 ![Ghidra_Step_4](/assets/images/Ghidra_Step_4.png)
 
 `rand()` requires `srand()` to generate a *seed* first. If we go back to the `main` function, we see that the seed is the current time specified in the previously mentioned variable `local_50` in line `local_50 = time((time_t *)0x0);`.
 
-Now that we know that we can build our own random seed generator and pass it the value we're given in the error message, when we execute `broken_pwsafe`.
+Now that we know that we can build our own random seed generator and pass it the value we're given in the error message when we execute `broken_pwsafe`.
 
 The result looks like this:
 
@@ -214,7 +214,7 @@ int main(){
 }
 ````
 
-Once we enter the random value we generated with our function, we can capture the flag inside the safe: So let's do this right now. First we execute the `broken_pwsafe` then, with the error number we recive, we rund our new script and enter the result as our new password:
+Once we enter the random value we generated with our function, we can capture the flag inside the safe: So let's do this right now. First, we execute the `broken_pwsafe` then, with the error number we receive, we run our new script and enter the result as our new password:
 
 ``` bash
 ./broken_pwsafe 
@@ -236,8 +236,8 @@ FLAG{your safe is now open again}}
 388340858
 ```
 
-It worked and we caputured our flag: `FLAG{your safe is now open again}}`.
+It worked and we captured our flag: `FLAG{your safe is now open again}}`.
 
-Of course this is a rather simple task compared to other Caputure the Flag challenges, however I hope is was of use to you and gave you a brief intoduction to reverse engineering and the tools you can use.
+Of course, this is a rather simple task compared to other Capture the Flag challenges, however, I hope it was of use to you and gave you a brief introduction to reverse engineering and the tools you can use.
 
-If I find the time, I'll expand this post and add more posts regarding other reverse enginering topics or challenges.
+If I find the time, I'll expand this post and add more posts regarding other reverse engineering topics or challenges.
