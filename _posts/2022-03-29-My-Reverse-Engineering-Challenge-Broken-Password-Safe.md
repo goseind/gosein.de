@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reverse Engineering Challenge: Broken Password Safe"
+title:  "My Reverse Engineering Challenge: Broken Password Safe"
 date:   2022-03-29
 categories: reverse-engineering c challenge
 ---
@@ -11,19 +11,54 @@ Let’s start with the tools we need/can use:
 
 * [Ghidra](https://github.com/NationalSecurityAgency/ghidra)
 * [Radare2](https://github.com/radareorg/radare2)
-* gdb
+* [gdb](https://www.sourceware.org/gdb/)
 
 make sure you have the appropriate Java JDK installed. Additonaly you may need a Hex Editor for some challenges, not for mine though.
 
-Now let's start with our analysis. **Note: If you want to first try it yourself I engourage you to just download the `broken_pwsafe` file and go for it!**
+Now let's start with our analysis. **Note: If you want to first try it yourself I engourage you to just download the `broken_pwsafe` file and go for it!** Otherwhise follow my lead below. 
 
 The challange inclduing solution and source files can be found on my GitHub in the [re repo](https://github.com/goseind/re).
 
-Otherwhise follow my lead below. We start with opening the file in gdb which allows us to *savely* run the program and see what it does while having the abbility to stop and look at the current stack anytime. (Please note that for real life situations e. g. maleware analysis it is recommended to use a dedicated VM, which is not conntected to the network in any way!).
+We start with opening the file in gdb which allows us to *savely* run the program and see what it does while having the abbility to stop and look at the current stack anytime. **Please note that for real life situations e. g. maleware analysis it is recommended to use a dedicated VM, which is not conntected to the network in any way!.**
 
-xxxx
+``` bash
+gdb broken_pwsafe 
+GNU gdb (Ubuntu 9.2-0ubuntu1~20.04) 9.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
 
-Radare2 allows us to examin the exectubale in the command line by running the follwing commands:
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from broken_pwsafe...
+(No debugging symbols found in broken_pwsafe)
+(gdb) r
+Starting program: /home/dnic/Documents/vscode/re/challenges/broken_pwsafe/broken_pwsafe 
+*********************
+*** Password Safe ***
+*********************
+Enter your password:
+gsgrgsg454g5
+Error: 1648568247
+Your password safe has been compromised! A new numeric password has been set.
+Enter your new password:
+retgertge45g
+Wrong passsword! Abord.
+[Inferior 1 (process 10267) exited normally]
+(gdb) 
+```
+
+So when we rund the file with `r` inside gdb, we get prompted for a password. Let's just enter a random password like `1648568247` and see whats happens. The program responds with and error and tells us a new password has been set for us. Now we just need to enter our new password to access the safe again. The problem is, we don't know the new password and if we enter another random password the program abords. For practical reasons I'll skip more details about gdb for now and pick them up in a later blog post.
+
+So now we "know" what the program does or rather wants from us, we can use radare2 to disasemble the exectubale in the command line by running the follwing commands:
 
 ``` bash
 r2 -e bin.cache=true broken_pwsafe
@@ -99,21 +134,23 @@ r2 -e bin.cache=true broken_pwsafe
                                                                        ; 0x3d88
 ```
 
-Ghidra often times offers a simpler way and allows you to use a GUI instead of the command line. 
+Usually we look for the *main* function, so we search for it and select it with `s main` then we use `pd` to print the disasembled function. We can now try to figure out what the program does exacly.
 
-Step 1: Open Ghidra and create a new poroject, then import the `broken_pwsafe` file and double click it.
+Altough radare2 also offers a grapical user interface with [iaito](https://github.com/radareorg/iaito/) we now want to switch to Ghidra and persue the following steps:
+
+**Step 1: Open Ghidra and create a new poroject, then import the `broken_pwsafe` file and double click it.**
 
 ![Ghidra_Step_1](/assets/images/Ghidra_Step_1.png)
 
-Step 2: Ghidra asks you if you want to analyse the file, click *Yes* and then *Ok*.
+**Step 2: Ghidra asks you if you want to analyse the file, click *Yes* and then *Ok*.**
 
 ![Ghidra_Step_2](/assets/images/Ghidra_Step_2.png)
 
-Step 3: Look for the `main` function and click on it. Then you'll already be able to see the source code on the right, in this case (Please note, that in some cases the exceutbale is obfuscted and not that simple to read.)
+**Step 3: Look for the `main` function and click on it. Then you'll already be able to see the source code on the right, in this case.** *(Please note, that in some cases the exceutbale is obfuscted and not that simple to read.)*
 
 ![Ghidra_Step_3](/assets/images/Ghidra_Step_3.png)
 
-As you may have noticed, the challenge of this Capture the Flag is not accessing or reading the source code (as we've seen, we can do this quite easily with the above tools), but to figure out what the program does and how we can access whats inside the password safe.
+As you may have noticed, the challenge of this Capture the Flag is not accessing or reading the source code *(as we've seen, we can do this quite easily with the above tools)*, but to figure out what the program does and how we can access whats inside the password safe *(the flag)*.
 
 Below we can see the source code in plain text again, ectracted from Ghidra:
 
@@ -177,7 +214,29 @@ int main(){
 }
 ````
 
-Once we enter the random value we generated with our function, we can capture the flag inside the safe: **FLAG{your safe is now open again}**.
+Once we enter the random value we generated with our function, we can capture the flag inside the safe: So let's do this right now. First we execute the `broken_pwsafe` then, with the error number we recive, we rund our new script and enter the result as our new password:
+
+``` bash
+./broken_pwsafe 
+*********************
+*** Password Safe ***
+*********************
+Enter your password:
+dfgsgser
+Error: 1648571648
+Your password safe has been compromised! A new numeric password has been set.
+Enter your new password:
+388340858
+FLAG{your safe is now open again}}
+```
+
+``` bash
+./rand_seed
+1648571648
+388340858
+```
+
+It worked and we caputured our flag: `FLAG{your safe is now open again}}`.
 
 Of course this is a rather simple task compared to other Caputure the Flag challenges, however I hope is was of use to you and gave you a brief intoduction to reverse engineering and the tools you can use.
 
