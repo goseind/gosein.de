@@ -115,3 +115,70 @@ Step 3: Look for the `main` function and click on it. Then you'll already be abl
 
 As you may have noticed, the challenge of this Capture the Flag is not accessing or reading the source code (as we've seen, we can do this quite easily with the above tools), but to figure out what the program does and how we can access whats inside the password safe.
 
+Below we can see the source code in plain text again, ectracted from Ghidra:
+
+``` c
+void main(void)
+
+{
+  long in_FS_OFFSET;
+  int local_54;
+  ulong local_50;
+  undefined local_48 [56];
+  long local_10;
+  
+  local_10 = *(long *)(in_FS_OFFSET + 0x28);
+  local_50 = time((time_t *)0x0);
+  local_54 = 0;
+  puts("*********************");
+  puts("*** Password Safe ***");
+  puts("*********************");
+  puts("Enter your password:");
+  __isoc99_scanf(&DAT_00102049,local_48);
+  pw_generator(local_50 & 0xffffffff);
+  printf("Error: ");
+  printf("%ld\n",local_50);
+  puts("Your password safe has been compromised! A new numeric password has been set.");
+  puts("Enter your new password:");
+  __isoc99_scanf(&DAT_001020c7,&local_54);
+  if (local_54 == new_pw) {
+    puts("FLAG{your safe is now open again}}");
+  }
+  else {
+    puts("Wrong passsword! Abord.");
+  }
+  if (local_10 != *(long *)(in_FS_OFFSET + 0x28)) {
+                    /* WARNING: Subroutine does not return */
+    __stack_chk_fail();
+  }
+  return;
+}
+```
+
+Interesting to us is the line where the function `pw_generator` is called, because we notice that the variable `local_50` is used there and also shared with the user in the following `printf("%ld\n",local_50);` statement.
+
+If we then checkout the `pw_generator` function in Ghidra and see that is uses the `rand()` function in C to generate a random value, which is then used for our new password.
+
+![Ghidra_Step_4](Ghidra_Step_4.png)
+
+`rand()` requires `srand()` to generate a *seed* first. If we go back to the `main` function, we see that the seed is the current time specified in the previously mentioned variable `local_50` in line `local_50 = time((time_t *)0x0);`.
+
+Now that we know that we can build our own random seed generator and pass it the value we're given in the error message, when we execute `broken_pwsafe`.
+
+The result looks like this:
+
+``` c
+int main(){
+    int seed = 0;
+    scanf("%d", &seed); // scans for user input as a seed number
+    srand(seed);
+    printf("%d\n", rand()); // prints random number with seed input
+    return 0;
+}
+````
+
+Once we enter the random value we generated with our function, we can capture the flag inside the safe: **FLAG{your safe is now open again}**.
+
+Of course this is a rather simple task compared to other Caputure the Flag challenges, however I hope is was of use to you and gave you a brief intoduction to reverse engineering and the tools you can use.
+
+If I find the time, I'll expand this post and add more posts regarding other reverse enginering topics or challenges.
