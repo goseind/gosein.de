@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Purpose of this Blog"
-date:   2022-03-28 22:36:51 +0200
+date:   2022-03-28
 categories: general info
 ---
 
