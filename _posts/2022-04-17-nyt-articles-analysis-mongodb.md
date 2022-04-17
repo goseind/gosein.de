@@ -35,4 +35,6 @@ So let's get started by running the MongoDB Docker Container, setting up a datab
 
 The repo also contains the file with all the [queries to answer the above questions](https://github.com/goseind/nyt-article-analysis/blob/main/nyt-mongosh-queries).
 
-Additionaly you can watch this video which explains the whole process step by step including data visualization with MongoDB Atlas and Charts.
+Additionaly you can watch [this YouTube video](https://youtu.be/zq3gzOMJ9Ow) which explains the whole process step by step including data visualization with MongoDB Atlas and Charts.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zq3gzOMJ9Ow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
