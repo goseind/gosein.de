@@ -6,12 +6,12 @@ permalink: /books/
 
 *work in progress*
 
-List of my favorite books (with review):
+List of my favorite books and other books I've read (some with review):
 
 * The Hitchhiker's Guide to the Galaxy, Douglas Adams
 * ..
 
-My book wish list:
+My book/author wish list:
 
 * Kurt Gödel
 * The Stranger, Albert Camus
