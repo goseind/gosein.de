@@ -4,7 +4,7 @@ title: Places
 permalink: /places/
 ---
 
-*work in progress*
+* -- work in progress -- *
 
 This is a list of my favorite places in the world, these can be specific cafes as well as entire cities. I try to cluster them in a way it makes sense..
 
