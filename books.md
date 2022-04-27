@@ -4,7 +4,7 @@ title: Books
 permalink: /books/
 ---
 
-* -- work in progress -- *
+*--work in progress--*
 
 List of my favorite books and other books I've read (some with review):
 
