@@ -40,12 +40,11 @@ Get-FileHash <filepath> -Algorithm MD5
 ./adb reboot recovery
 ```
 
-![TWRP Lockscreen](/assets/images/xiaomi/twrp_lockscreen.jpeg)
-![TWRP Home](/assets/images/xiaomi/twrp_home.jpeg)
+<img src="assets/images/xiaomi/twrp_lockscreen.jpeg" height="300"/> <img src="assets/images/xiaomi/twrp_home.jpeg" height="300"/>
 
 4. Before you proceed you need to wipe your device by clicking "Wipe" inside recovery mode. Then swipe to the right to confirm (*no need to change any parameters*). After that, I also choose to format all the data by going into "Wipe" again, after a reboot to recovery, and clicking on "Format data" and confirming.
 
-![TWRP Wipe](/assets/images/xiaomi/twrp_wipe.jpeg)
+<img src="/assets/images/xiaomi/twrp_wipe.jpeg" height="300"/>
 
 5. Download the custom Android ZIP file from Xiaomi.EU. In my case, I went with the latest stable version MIUI 13 with Android 12, which can be found [here](https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/xiaomi.eu/MIUI-STABLE-RELEASES/MIUIv13/xiaomi.eu_multi_POCOX3NFC_V13.0.1.0.SJGMIXM_v13-12.zip/download). And the official post in the Xiaomi.EU forum with further information [here](https://xiaomi.eu/community/threads/miui-13-stable-release.64441/).
 
@@ -53,11 +52,11 @@ Get-FileHash <filepath> -Algorithm MD5
 
 7. Switch to your device and inside recovery mode click on "Install" then select the ZIP file you just copied and confirm the installation (*no need to change any parameters*).
 
-![TWRP Install](/assets/images/xiaomi/twrp_install.jpeg)
+<img src="assets/images/xiaomi/twrp_install.jpeg" height="300"/>
 
 8. Reboot your device after the installation ended successfully. **The first boot may take a long time, for me it was around 10 minutes, so be patient.**
 
-![Xiaomi.EU Home](/assets/images/xiaomi/xiaomi_eu.jpeg)
+<img src="/assets/images/xiaomi/xiaomi_eu.jpeg" height="300"/>
 
 Now all that's left is to configure the newly installed OS to your liking - have fun!
 
