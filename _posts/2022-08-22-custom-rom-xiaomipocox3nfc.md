@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Switching from ArrowOS to Xiaomi EU custom ROM on Poco X3 NFC"
+title:  "Switching from ArrowOS to Xiaomi EU custom ROM on my Poco X3 NFC"
 date:   2022-08-22
 categories: rom xiaomi android arrowos custom poco x3 nfc phone flash
 ---
