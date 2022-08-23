@@ -17,28 +17,44 @@ After I bought my Xiaomi POCO X3 NFC last year, I flashed the latest ArrowOS. I 
 
 I went with a *very clean* install and also used to chance to switch to a different build of TWRP, so we'll start with that.
 
-***Please note** that this guide assumes your device is already unlocked and developer mode as well as USB debugging is enabled.*
+***Please note** that this guide assumes your device is already unlocked and developer mode, as well as USB debugging is enabled. Further, you'll need Android Debug Bridge (ADB). The website for unlocking your Xiaomi device can be found [here](https://en.miui.com/unlock/index.html) and a guide on how to install ADB [here](https://www.xda-developers.com/install-adb-windows-macos-linux/).*
 
 1. I used the TWRP custom recovery by *birgudav* from XDA which you can download [here](https://androidfilehost.com/?fid=15664248565197184079).
 
+2. Once downloaded you should rename it to `twrp.img` and move it into the ADB folder. With a terminal from there and your phone connected via USB you should execute `./adb devices` to see if your device is recognized.
 
+3. Now flash the custom recovery with the following set of ADB commands. Once your device reboots you should see the TWRP screen.
 
 ```pwsh
- ./adb devices
-
- ./adb shell getprop ro.build.ab_update
-./adb shell getprop
-
 ./adb reboot bootloader
-
 ./fastboot flash recovery twrp.img
+./adb reboot recovery
+```
+
+4. Download and 
+
+**Command summary:**
+
+```pwsh
+# List connected devices
+./adb devices
+
+# Check whether your device has a/b partitioning or just a
+./adb shell getprop ro.build.ab_update
+./adb shell getprop # List all device properties
+
+# Install custom recovery
+./adb reboot bootloader
+./fastboot flash recovery twrp.img
+./adb reboot recovery
+
+# Get and compare file hash
+Get-FileHash <filepath> -Algorithm MD5
+"<filehash>" -eq "<filehash>"
+
+# Copy files to device
+./adb push <filepath> /sdcard/<filename>
+
+# Reboot system
 ./fastboot reboot
-
- ./adb reboot recovery
-
-Get-FileHash .\xiaomi.eu_multi_POCOX3NFC_V13.0.1.0.SJGMIXM_v13-12.zip -Algorithm MD5
-"BBCE24C17F8A1BE0F8A99B30508D4357" -eq "bbce24c17f8a1be0f8a99b30508d4357"
-
-
-./adb push .\xiaomi.eu_multi_POCOX3NFC_V13.0.1.0.SJGMIXM_v13-12.zip /sdcard/xiaomi.eu_multi_POCOX3NFC_V13.0.1.0.SJGMIXM_v13-12.zip
 ```
