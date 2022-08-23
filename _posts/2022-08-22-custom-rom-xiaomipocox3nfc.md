@@ -40,7 +40,7 @@ Get-FileHash <filepath> -Algorithm MD5
 ./adb reboot recovery
 ```
 
-<img src="assets/images/xiaomi/twrp_lockscreen.jpeg" height="300"/> <img src="assets/images/xiaomi/twrp_home.jpeg" height="300"/>
+<img src="/assets/images/xiaomi/twrp_lockscreen.jpeg" height="300"/> <img src="/assets/images/xiaomi/twrp_home.jpeg" height="300"/>
 
 4. Before you proceed you need to wipe your device by clicking "Wipe" inside recovery mode. Then swipe to the right to confirm (*no need to change any parameters*). After that, I also choose to format all the data by going into "Wipe" again, after a reboot to recovery, and clicking on "Format data" and confirming.
 
@@ -52,7 +52,7 @@ Get-FileHash <filepath> -Algorithm MD5
 
 7. Switch to your device and inside recovery mode click on "Install" then select the ZIP file you just copied and confirm the installation (*no need to change any parameters*).
 
-<img src="assets/images/xiaomi/twrp_install.jpeg" height="300"/>
+<img src="/assets/images/xiaomi/twrp_install.jpeg" height="300"/>
 
 8. Reboot your device after the installation ended successfully. **The first boot may take a long time, for me it was around 10 minutes, so be patient.**
 
