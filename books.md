@@ -4,21 +4,6 @@ title: Books
 permalink: /books/
 ---
 
-*--work in progress--*
+I recently dug through some of the books I own and made this picture of some of my favorite books I read in the past years - maybe you'll find some of them interesting as well!
 
-List of my favorite books and other books I've read (some with review):
-
-* The Hitchhiker's Guide to the Galaxy, Douglas Adams
-* ..
-
-My book/author wish list:
-
-* Kurt Gödel
-* The Stranger, Albert Camus
-* Democracy When the People Are Thinking, James S. Fishkin
-* The Science of Logic, Georg Wilhelm Friedrich Hegel
-* The Brothers Karamazov, by Fyodor Dostoevsky
-* Thomas Mann
-* Gabriel García Márquez
-* Essential Math for AI, Hala Nelson
-* ..
+![Fav Books](/assets/images/books/fav_books.jpg)
