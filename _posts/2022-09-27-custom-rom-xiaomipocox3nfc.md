@@ -15,4 +15,6 @@ We used a preconfigured Turtlebot3 Burger robot and equipped it with a front cam
 
 <img src="/assets/images/robot/ball-schubser_front_side_new_desc.jpg" height="300"/>
 
-The robot 
+The robot uses a Raspberry Pi 4, on which we installed 
+
+<img src="/assets/images/robot/network_setup.jpg" height="300"/>
