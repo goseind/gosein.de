@@ -18,3 +18,5 @@ We used a preconfigured Turtlebot3 Burger robot and equipped it with a front cam
 The robot uses a Raspberry Pi 4, on which we installed 
 
 <img src="/assets/images/robot/network_setup.jpg" height="300"/>
+
+This blog post is accompanied by a scitentific paper, w
