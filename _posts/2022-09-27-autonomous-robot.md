@@ -11,7 +11,7 @@ We aimed to build an autonomous robot capable of detecting and collecting given 
 
 As a base for our robot, we used a TurtleBot Burger, equipped with two servomotors, a microcontroller, and a Raspberry Pi for onboard computation. Additionally, we mounted a Raspberry Pi cam to the front of the TurtleBot as well as a fork to collect the objects. This is what the final result looked like:
 
-<img src="/assets/2022-09-27-autonomous-robot/ball-schubser_front_side_new_desc.jpg" height="350"/>
+<img src="/assets/2022-09-27-autonomous-robot/ball-schubser_front_side_new_desc.jpg" height="400"/>
 
 We used YOLO for object detection and for adjusting the camera in a way it would detect our dummy object of choice (a tennis ball) in all situations, we mounted it with a little rail for up and down adjustments.
 
@@ -34,7 +34,7 @@ But now enough with the words, hers is a video demonstration of the robot.
 
 We also wrote a more scientific text on the setup and the things we discovered while performing this project. The paper also goes into detail about YOLO and its differences in performance.
 
-Citation and link to the paper: Bracke, A., Gosein, D., Kürschner, M., Mayer, J., & Seefeld, J. (n.d.). Development of an Autonomous Robot for Detecting and Collecting Objects (p. 12) [Working Paper]. https://opus.bib.hs-mannheim.de/frontdoor/index/index/docId/100
+[Citation and link to the paper: Bracke, A., Gosein, D., Kürschner, M., Mayer, J., & Seefeld, J. (n.d.). Development of an Autonomous Robot for Detecting and Collecting Objects (p. 12) [Working Paper]](https://opus.bib.hs-mannheim.de/frontdoor/index/index/docId/100)
 
 The source code for the entire project is available on GitHub. We tried to build the repository in a way that one can easily clone and run the same thing on their TurtleBot. The repo includes some instructions for that.
 
