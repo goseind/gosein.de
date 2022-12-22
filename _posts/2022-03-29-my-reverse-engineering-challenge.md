@@ -140,15 +140,15 @@ Although radare2 also offers a graphical user interface with [iaito](https://git
 
 **Step 1: Open Ghidra and create a new project, then import the `broken_pwsafe` file and double click it.**
 
-![Ghidra_Step_1](/assets/images/ghidra/Ghidra_Step_1.png)
+![Ghidra_Step_1](/assets/2022-03-29-my-reverse-engineering-challenge/Ghidra_Step_1.png)
 
 **Step 2: Ghidra asks you if you want to analyze the file, click *Yes* and then *Ok*.**
 
-![Ghidra_Step_2](/assets/images/ghidra/Ghidra_Step_2.png)
+![Ghidra_Step_2](/assets/2022-03-29-my-reverse-engineering-challenge/Ghidra_Step_2.png)
 
 **Step 3: Look for the `main` function and click on it. Then you'll already be able to see the source code on the right, in this case.** *(Please note, that in some cases the executable is obfuscated and not that simple to read.)*
 
-![Ghidra_Step_3](/assets/images/ghidra/Ghidra_Step_3.png)
+![Ghidra_Step_3](/assets/2022-03-29-my-reverse-engineering-challenge/Ghidra_Step_3.png)
 
 As you may have noticed, the challenge of this Capture the Flag is not accessing or reading the source code *(as we've seen, we can do this quite easily with the above tools)*, but figuring out what the program does and how we can access what's inside the password safe *(the flag)*.
 
@@ -196,7 +196,7 @@ Interesting to us is the line where the function `pw_generator` is called becaus
 
 If we then check out the `pw_generator` function in Ghidra and see that it uses the `rand()` function in C to generate a random value, which is then used for our new password.
 
-![Ghidra_Step_4](/assets/images/ghidra/Ghidra_Step_4.png)
+![Ghidra_Step_4](/assets/2022-03-29-my-reverse-engineering-challenge/Ghidra_Step_4.png)
 
 `rand()` requires `srand()` to generate a *seed* first. If we go back to the `main` function, we see that the seed is the current time specified in the previously mentioned variable `local_50` in line `local_50 = time((time_t *)0x0);`.
 
