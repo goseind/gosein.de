@@ -34,7 +34,7 @@ But now enough with the words, hers is a video demonstration of the robot.
 
 We also wrote a more scientific text on the setup and the things we discovered while performing this project. The paper also goes into detail about YOLO and its differences in performance.
 
-Citation and link to the paper: [Bracke, A., Gosein, D., Kürschner, M., Mayer, J., & Seefeld, J. (n.d.). Development of an Autonomous Robot for Detecting and Collecting Objects (p. 12) [Working Paper]](https://opus.bib.hs-mannheim.de/frontdoor/index/index/docId/100)
+Citation and link to the paper: [Bracke, A., Gosein, D., Kürschner, M., Mayer, J., & Seefeld, J. (n.d.). Development of an Autonomous Robot for Detecting and Collecting Objects (p. 12) [Working Paper] URN: https://stud.hs-mannheim.de/SRedirect/3D221ABB/nbn-resolving.org/urn:nbn:de:bsz:953-opus-1006](https://stud.hs-mannheim.de/SRedirect/3D221ABB/nbn-resolving.org/urn:nbn:de:bsz:953-opus-1006)
 
 The source code for the entire project is available on GitHub. We tried to build the repository in a way that one can easily clone and run the same thing on their TurtleBot. The repo includes some instructions for that.
 
