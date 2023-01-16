@@ -10,7 +10,7 @@ In September, I began my Technical Studentship at CERN in Geneva, and the time j
 When I think back, my journey to CERN started a while ago without me noticing. While I was always eagerly interested in natural sciences and the understanding of fundamental principles of physics I never thought I had it in me to work in that area. But while finishing my bachelor's degree in business informatics, I felt more and more the urge to explore these fundamental concepts and so I decided to inscribe myself into physics and mathematics courses at the University of Leipzig in Germany. After one year of exploring and learning new things, I followed up with my computer science master's at the Unversity of Applied Sciences in Mannheim. One of the reasons for choosing this master's degree was the opportunity to participate in a collaborative project between CERN and inno.space Mannheim. This project gave me the chance to visit CERN in November 2021 and made me aware of the opportunities for computer science students at CERN.
 
 <figure>
-    <img src="/assets/2023-01-16-working-at-cern/me_at_cms.jpg" alt="Me at CMS in 2021" style="width:50%"/>
+    <img src="/assets/2023-01-16-working-at-cern/me_at_cms.jpg" alt="Me at CMS in 2021" style="width:70%"/>
     <figcaption>Me at CMS in 2021</figcaption>
 </figure> 
 
@@ -41,14 +41,14 @@ The project code is largely open source and much more information can be found o
 Besides work, I'm (becoming) a big outdoor sports enthusiast. The area around Geneva is great for that and offers plenty of things to do, like hiking, climbing, and of course, skiing to name a few of them. Right behind me, I have the beautiful Jura mountain chain and in front of me the magnificent Alps, with Europe's highest mountain Mont Blanc perfectly visible on a clear winter day. As CERN has a big community and so many people from around the globe, it is easy to connect with people and share with them some of the great things you can do around here.
 
 <figure>
-    <img src="/assets/2023-01-16-working-at-cern/view_from_Mont_Billiat.jpeg" alt="View from Mont Billart, France" style="width:50%"/>
+    <img src="/assets/2023-01-16-working-at-cern/view_from_Mont_Billiat.jpeg" alt="View from Mont Billart, France" style="width:70%"/>
     <figcaption>View from Mont Billart, France</figcaption>
 </figure>
 
 With LHC Run 3 in full swing, it is generally an exciting time to be at CERN and I use the very opportunity to learn about other things outside my main work area. I for example attended the first Quantum computing Conference for High Energy Physics at CERN, and since the LHC is currently off due to its scheduled winter break, visited some more experiments like ATLAS.
 
 <figure>
-    <img src="/assets/2023-01-16-working-at-cern/me_at_atlas.jpg" alt=Me at ATLAS recently" style="width:50%"/>
+    <img src="/assets/2023-01-16-working-at-cern/me_at_atlas.jpg" alt="Me at ATLAS recently" style="width:70%"/>
     <figcaption>Me at ATLAS recently</figcaption>
 </figure>
 
