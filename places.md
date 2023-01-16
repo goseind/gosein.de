@@ -14,6 +14,7 @@ Coffee shops are great places for leisure. I especially enjoy reading books ther
 ## Genève (my current home)
 
 * [Utopia Coffee Shop](https://utopiacoffee.ch), 58 Rue de Saint-Jean, 1203 Genève
+* [Pages & Sips](https://www.pagesandsips.com/), Grand-Rue 37, 1204 Genève
 
 ## Den Haag
 
