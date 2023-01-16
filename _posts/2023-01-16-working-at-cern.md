@@ -48,7 +48,7 @@ Besides work, I'm (becoming) a big outdoor sports enthusiast. The area around Ge
 With LHC Run 3 in full swing, it is generally an exciting time to be at CERN and I use the very opportunity to learn about other things outside my main work area. I for example attended the first Quantum computing Conference for High Energy Physics at CERN, and since the LHC is currently off due to its scheduled winter break, visited some more experiments like ATLAS.
 
 <figure>
-    <img src="/assets/2023-01-16-working-at-cern/me_at_atlas.jpg" alt="Me at ATLAS recently" style="width:70%"/>
+    <img src="/assets/2023-01-16-working-at-cern/me_at_atlas.jpeg" alt="Me at ATLAS recently" style="width:70%"/>
     <figcaption>Me at ATLAS recently</figcaption>
 </figure>
 
