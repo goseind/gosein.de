@@ -56,10 +56,11 @@ With LHC Run 3 in full swing, it is generally an exciting time to be at CERN and
 </figure>
 
 To conclude I want to provide some more tips for newcomers, that I would have wished to have in the beginning:
-You need a Swiss IBAN for your paycheck and banking in Switzerland can be very intransparent. After doing (too much) research, I ended up at yuh, a swiss neo-bank with the best conditions at the time (of course circumstances change quickly in this industry nowadays, so make sure to check again). WISE and Revolut for exchanging money into EUR or other currencies are also very useful!
-CERN offers rental bikes for free and having a bike can be very useful as public transportation is not the best around here.
-Sign up for a french course!
-Take some of the many tours CERN has to offer, it's a huge organization, and there is (too) much to explore!
-Check out the CERN Clubs - there is one for everything!
+
+* You need a Swiss IBAN for your paycheck and banking in Switzerland can be very intransparent. After doing (too much) research, I ended up at yuh, a swiss neo-bank with the best conditions at the time (of course circumstances change quickly in this industry nowadays, so make sure to check again). WISE and Revolut for exchanging money into EUR or other currencies are also very useful!
+* CERN offers rental bikes for free and having a bike can be very useful as public transportation is not the best around here.
+* Sign up for a french course!
+* Take some of the many tours CERN has to offer, it's a huge organization, and there is (too) much to explore!
+* Check out the CERN Clubs - there is one for everything!
 
 I hope this article gave you some interesting insight into CERN, my work and private life around here, and some valuable information in case you're planning to work at CERN in the future.
