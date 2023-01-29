@@ -33,6 +33,7 @@ github_username: goseind
 theme: minima
 skin: dark
 plugins:
+  - jekyll-seo-tag
 #  - jekyll-feed
 
 # Exclude from processing.
