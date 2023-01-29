@@ -31,7 +31,8 @@ github_username: goseind
 
 # Build settings
 remote_theme: jekyll/minima # set up remote_theme instead of explicitly setting the theme version in the Gemfile
-skin: solarized
+minima:
+  skin: solarized
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
