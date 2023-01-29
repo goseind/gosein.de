@@ -5,4 +5,6 @@
 layout: home
 ---
 
-![Blog Banner](Blog_Banner.png)
+![Blog Banner](domenics-blog-banner.jpg)
+
+Below you'll find my most recent posts. If you want to know more about me, make sure to check out the other pages.
