@@ -31,7 +31,7 @@ github_username: goseind
 
 # Build settings
 theme: minima
-skin: dark
+skin: solarized
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
