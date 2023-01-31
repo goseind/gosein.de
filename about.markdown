@@ -15,3 +15,9 @@ To learn more about me checkout:
 * [My LinkedIn](http://www.linkedin.com/in/goseind)
 * [My CV]({% link cv.md %})
 * [My Blog Posts]({% link index.markdown %})
+
+
+#### Credits
+
+- <a href="https://www.flaticon.com/free-icons/data" title="data icons">Data icons created by Kiranshastry - Flaticon</a>
+
