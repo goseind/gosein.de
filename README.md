@@ -1,3 +1,5 @@
+[![pages-build-deployment](https://github.com/goseind/gosein.de/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/goseind/gosein.de/actions/workflows/pages/pages-build-deployment)
+
 # gosein.de
 
 This *README* is a mainly documentation for myself.
