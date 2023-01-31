@@ -32,6 +32,7 @@ twitter:
   card: summary
 twitter_username: dogosein # are both necessary?
 github_username: goseind
+google_site_verification: 6yjgiiATzCxUkZ0On5KXtnml3PEPps0L4Lo_RtUq3YY
 
 # Build settings
 remote_theme: jekyll/minima # set up remote_theme instead of explicitly setting the theme version in the Gemfile
