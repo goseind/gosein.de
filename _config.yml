@@ -21,9 +21,11 @@
 # >- # this means to ignore newlines until "baseurl:"
 
 title: Domenic's Blog
+author: 
+  name: Domenic Gosein
+  #email: your-email@example.com
 # logo: 
 tagline: A blog dedicated to interesting posts about computer science, work, and life
-# email: your-email@example.com
 description: A personal blog by Domenic Gosein with interesting posts about computer science, work, and life.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://gosein.de" # the base hostname & protocol for your site, e.g. http://example.com
@@ -38,6 +40,10 @@ google_site_verification: 6yjgiiATzCxUkZ0On5KXtnml3PEPps0L4Lo_RtUq3YY
 remote_theme: jekyll/minima # set up remote_theme instead of explicitly setting the theme version in the Gemfile
 minima:
   skin: solarized
+  social_links:
+    - { platform: github,  user_url: "https://github.com/goseind" }
+    - { platform: twitter, user_url: "https://twitter.com/dogosein" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/goseind/" }
 plugins:
   - jekyll-seo-tag
   - jekyll-feed

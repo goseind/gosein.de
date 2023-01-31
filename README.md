@@ -8,7 +8,7 @@ This *README* is a mainly documentation for myself.
 
 - List of supported plugins: https://pages.github.com/versions/
 - GH Pages Docs: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll
-
+- Theme used/docs to theme: https://github.com/jekyll/minima#skins
 
 ## Documentation
 
