@@ -48,6 +48,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-gist
 
 permalink: /:title:output_ext
 

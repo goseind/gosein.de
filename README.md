@@ -2,7 +2,7 @@
 
 # gosein.de
 
-This *README* is a mainly documentation for myself.
+Notes and documentation on the blog setup.
 
 ## Infos
 
