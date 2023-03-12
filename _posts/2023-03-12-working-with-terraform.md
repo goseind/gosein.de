@@ -7,12 +7,12 @@ categories: terraform openstack kubernetes iac infrastructure as code helm chart
 
 Infrastructure as Code (IaC) has become a popular approach to managing IT infrastructure. This approach treats infrastructure components as code, allowing automated deployment and management of infrastructure resources across different platforms, with the advantage of having all this information stored and tracked in a repository.
 
-In this blog post, we want to explore Terraform by HashiCorp - which is a popular tool for this purpose - by building a Kubernetes cluster on OpenStack and installing a Helm Chart on it.
+In this blog post, we want to explore [Terraform by HashiCorp](https://www.terraform.io/) - which is a popular tool for this purpose - by building a Kubernetes cluster on OpenStack and installing a Helm Chart on it.
 
-Terraform has its language to define resources, called HCL. While all the resources could be written in one file, it makes sense to divide them into several `.tf` files. Terraform reads all these files within the folder, when initialized. 
+Terraform has its own language to define resources, called [HCL](https://github.com/hashicorp/hcl/blob/main/hclsyntax/spec.md). While all the resources could be written in one file, it makes sense to divide them into several `.tf` files. Terraform reads all these files within the folder/subfolder, when initialized. 
 We'll start with a `providers.tf` file, where we define the providers we'll use. Providers allow you to interact with the corresponding API to manage resources.
 
-For our goal we need three providers: OpenStack, Kubernetes, and Helm:
+For our goal we need three providers: [OpenStack](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/1.50.0), [Kubernetes](https://registry.terraform.io/providers/hashicorp/kubernetes/latest), and [Helm](https://registry.terraform.io/providers/hashicorp/helm/latest):
 
 ```hcl
 terraform {
@@ -33,7 +33,7 @@ terraform {
 }
 ```
 
-Further, terraform needs a backend to store the configuration (state), the default is local, but to work in a team you want to store it in a secure remote location. In our case we're first going to use the local backend until we've set up our K8s cluster and then switch to that one:
+Further, terraform needs a backend to store the configuration ([state](https://developer.hashicorp.com/terraform/language/state)), the default is local, but to work in a team you want to store it in a secure remote location. In our case we're first going to use the local backend until we've set up our K8s cluster and then switch to that one:
 
 ```hcl
 terraform {
@@ -43,14 +43,14 @@ terraform {
 }
 ```
 
-Each provider need a configuration to define access. OpenStack is our main entry point and we're going to set the [required arguments](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs#configuration-reference) as environment variables and thus leave the brackets empty.
+Each provider need a configuration. OpenStack is our main entry point and we're going to set the [required arguments](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs#configuration-reference) as environment variables and thus leave the brackets empty:
 
 ```hcl
 provider "openstack" {
 }
 ```
 
-Now we can create our first resource, an OpenStack Kubernetes Cluster. On my platform (CERN Openstack), this requires us to create a keypair first, for the compute service SSH.
+Now we can create our first resource, an OpenStack Kubernetes Cluster. On my platform (CERN Openstack), this requires us to create a keypair for the compute service SSH first:
 
 ```hcl
 data "openstack_containerinfra_clustertemplate_v1" "cluster_template" {
@@ -101,7 +101,7 @@ variable "cluster-keypair-name" {
 }
 ```
 
-The `provisioner "local-exec" {}` can be used to invoke a local executable after the resource is created, this is useful if you need to do configuration that is not otherwise possible with terraform resources.
+The [`provisioner "local-exec" {}`](https://developer.hashicorp.com/terraform/language/resources/provisioners/local-exec) can be used to invoke a local executable after the resource is created. This is useful if you need to do configuration that is not otherwise possible with terraform resources.
 
 Now we're ready to run the code by executing the following commands one after the other:
 
@@ -109,7 +109,7 @@ Now we're ready to run the code by executing the following commands one after th
 2. `terraform plan` to verify the changes we're about to make
 3. `terraform apply` to deploy the changes
 
-Now that the cluster is deployed, we can use the existing resource to set up the configuration of the K8s and Helm provider by pulling the information from it:
+Now that the cluster is deployed, we can use the existing resource to set up the configuration of the K8s and Helm provider by pulling the information (kube config) from it:
 
 ```hcl
 provider "kubernetes" {
@@ -184,7 +184,7 @@ Different values can be set either by specifying a YAML file or setting them exp
 
   set {
     name  = "updateStatus"
-    value = true
+    value = "true"
   }
 ```
 
@@ -193,81 +193,3 @@ Thats it!
 The entire combined code is summarized in this gist:
 
 {% gist 8c688fb24d9bd47e36cd823e6aa90e61 %}
-
-Additonal information on how to work with terraform:
-
-Terraform install on Linux:
-
-```bash
-sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
-curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
-sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
-sudo apt-get update && sudo apt-get install terraform
-touch ~/.bashrc
-terraform -install-autocomplete
-```
-
-Terraform basic commands:
-
-```bash
-terraform init
-terraform refresh
-terraform plan
-terraform apply -target=resource
-terraform graph
-terraform state list
-terraform show
-terraform output
-terraform destroy
-```
-
-Terraform format and validation e. g. in CI/CD:
-
-```bash
-terraform fmt
-terraform validate
-```
-
-Terraform variables declaration:
-
-```hcl
-variable "server_port" {
-  description = "The port the server will use for HTTP requests"
-  type        = number
-  default     = 8080
-}
-```
-
-or:
-
-```bash
-terraform plan -var "server_port=8080"
-TF_VAR_<name>
-```
-
-Defining *local values* `local.<NAME>`:
-
-```hcl
-locals {
-  http_port    = 80
-  any_port     = 0
-  any_protocol = "-1"
-  tcp_protocol = "tcp"
-  all_ips      = ["0.0.0.0/0"]
-}
-```
-
-Terraform variable usage:
-
-```bash
-var.<VARIABLE_NAME>
-```
-
-Defining output form a ressource to show at the end of plan/apply:
-
-```hcl
-output "<NAME>" {
-  value = <VALUE>
-  [CONFIG ...]
-}
-```
