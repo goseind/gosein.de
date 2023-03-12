@@ -190,6 +190,6 @@ Different values can be set either by specifying a YAML file or setting them exp
 
 Thats it!
 
-The entire combined code can be found is summarized in this gist:
+The entire combined code is summarized in this gist:
 
 {% gist 8c688fb24d9bd47e36cd823e6aa90e61 %}
