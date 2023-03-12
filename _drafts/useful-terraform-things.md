@@ -80,3 +80,6 @@ output "<NAME>" {
   [CONFIG ...]
 }
 ```
+
+recommended reading: Terraform: Up and Running, 3rd Edition
+by Yevgeniy Brikman
