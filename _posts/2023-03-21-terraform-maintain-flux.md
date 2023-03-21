@@ -11,6 +11,91 @@ The [tf-flux](https://github.com/goseind/tf-flux) repository is a great resource
 
 To get started, simply clone the repository and navigate to the `tf` directory. Run the command `terraform init` to initialize the Terraform environment. Then, run the command `terraform apply` and enter your GitHub organizations name, repository, and token. Once this is done, any new files in the `flux/cluster` directory will be synced with Flux, while the Flux installation itself is maintained by Terraform.
 
+Looking at the [main.tf](https://github.com/goseind/tf-flux/blob/main/tf/main.tf) file, you'll see that we're using two providers, `fluxcd/flux` and `integrations/github`:
+
+```hcl
+terraform {
+  required_version = ">=1.1.5"
+  required_providers {
+    flux = {
+      source  = "fluxcd/flux"
+      version = ">=0.25.2"
+    }
+    github = {
+      source  = "integrations/github"
+      version = ">=5.18.3"
+    }
+  }
+}
+
+provider "github" {
+  owner = var.github_org
+  token = var.github_token
+}
+
+resource "tls_private_key" "flux" {
+  algorithm   = "ECDSA"
+  ecdsa_curve = "P256"
+}
+
+resource "github_repository_deploy_key" "this" {
+  title      = "Flux"
+  repository = var.github_repository
+  key        = tls_private_key.flux.public_key_openssh
+  read_only  = "false"
+}
+
+provider "flux" {
+  kubernetes = {
+    config_path = "~/.kube/config"
+  }
+  git = {
+    url = "ssh://git@github.com/${var.github_org}/${var.github_repository}.git"
+    ssh = {
+      username    = "git"
+      private_key = tls_private_key.flux.private_key_pem
+    }
+  }
+}
+```
+
+The latter is needed to obtain a deployment key to update the repository:
+
+```hcl
+resource "tls_private_key" "flux" {
+  algorithm   = "ECDSA"
+  ecdsa_curve = "P256"
+}
+
+resource "github_repository_deploy_key" "this" {
+  title      = "Flux"
+  repository = var.github_repository
+  key        = tls_private_key.flux.public_key_openssh
+  read_only  = "false"
+}
+```
+
+In the final step, we're bootstrapping the repo to the cluster and setting a `path` for Flux to store system files. This path can be the same as `target_path` which is the folder Flux syncs with:
+
+```hcl
+resource "flux_bootstrap_git" "this" {
+  depends_on = [github_repository_deploy_key.this]
+  path = "flux"
+}
+
+data "flux_install" "main" {
+  target_path    = "flux/cluster"
+  network_policy = false
+  version        = "latest"
+}
+
+data "flux_sync" "main" {
+  target_path = "flux/cluster"
+  url         = "https://github.com/${var.github_org}/${var.github_repository}"
+  branch      = "main"
+}
+```
+
 One of the biggest benefits of using Terraform to maintain Flux is the ability to manage the entire infrastructure as code. While Flux sits on top of an existing Kubernetes cluster and can maintain manifests in it, with Terraform however you can maintain the cluster and its surrounding resources as well and thus combine the two seamlessly.  
 With Terraform, it is easy to version control, test, and automate infrastructure changes. This makes it easier to maintain a consistent and reliable infrastructure over time.
 
