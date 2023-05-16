@@ -10,4 +10,5 @@ permalink: /publication-and-talks/
 
 ## Talks:
 
-* [The Virtual Research Environment, IT Technical Forum and Computing Seminar, 3 Mar 2023, IT Amphitheatre (CERN)](https://weblecture-player.web.cern.ch/?year=2023&id=1230107c0)
+* [The Virtual Research Environment at JupyterCon 2023 in Cité des sciences et de l’industrie in Paris](https://youtu.be/wbJraW8X4ag)
+* [The Virtual Research Environment at IT Technical Forum and Computing Seminar at CERN in 2023)](https://weblecture-player.web.cern.ch/?year=2023&id=1230107c0)
