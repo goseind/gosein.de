@@ -5,21 +5,21 @@ date:   2023-05-16
 categories: openscience datascience jupyter jupyternotebooks jupyterhub jupyterlab paris tech event community cern eosc
 ---
 
-***This articel has also appeared in the [CERN Computing Blog](https://computing-blog.web.cern.ch/)***
+***This articel has also appeared in the [CERN Computing Blog](https://computing-blog.web.cern.ch/2023/05/insights-from-jupytercon-2023-in-paris/)***
 
 Project Jupyter and IPython have no doubt revolutionized the way scientific computing is done. Today CERN and many other major organisations around the globe are using them to do their research. This article gives you the newest insights into Project Jupyter from its biggest community gathering in 2023 in Paris - the JupyterCon!
 
-<img src="/assets/2023-05-16-jupytercon-2023-paris/JupyterCon2023_Talk.jpeg" height="400"/>
+![](/assets/2023-05-16-jupytercon-2023-paris/JupyterCon2023_Talk.jpeg)
 
 Project Jupyter is a large open-source project born out of the IPython project for interactive data science and scientific computing with an international community. Jupyter products are used by many large institutes and corporations like NYU, MIT, Harvard, Berkeley, NASA, Netflix, AWS, and Google (and of course CERN) for their scientific and educational needs as well as many science experiments from various disciplines across the globe. Since its start in 2014, it has grown bigger by the year and revolutionized the way science is done.
 
-<img src="/assets/2023-05-16-jupytercon-2023-paris/labpreview.jpg" height="400"/>
+![](/assets/2023-05-16-jupytercon-2023-paris/labpreview.jpg)
 
 *Source: https://jupyter.org/, 05/2023*
 
 At JupyterCon this international community comes together once a year to present and discuss their advancements, use cases and products in and around the expanding Jupyter Ecosystem. The experience is enriched by insightful keynotes, in-depth training and networking events. The conference had several tracks ranging from Community Tools and Practices to Enterprise Jupyter Infrastructure, Data Science, Education and Research and Scientific Computing. This year's conference took place at Cité des sciences et de l’industrie - an amazing venue in Paris - with around 300 attendees.
 
-<img src="/assets/2023-05-16-jupytercon-2023-paris/JupyterCon2023_Venue.jpeg" height="400"/>
+![](/assets/2023-05-16-jupytercon-2023-paris/JupyterCon2023_Venue.jpeg)
 
 Throughout the conference, there were many opportunities to network with other attendees, many of whom are facing the same challenges in their domains as we at CERN. Open science, data preservation and reproducibility are pressing topics in science and the conference provided a good opportunity to discuss these with researchers from MIT,  NASA, the Memorial University of Newfoundland working with NASA TOPS on open science as well as the Leibniz Institute for Information Infrastructure in Germany.
 Apart from the above, there were many more fruitful conversations with maintainers, admins and users of the Jupyter Ecosystem.
@@ -43,13 +43,13 @@ Real-time collaboration for Jupyter users, more info [here](https://jupyterhub.r
 
 These are just an excerpt of the many presentations, lightning talks and poster sessions given, the full schedule and soon the recording should be available on the JupyterCon website [here](https://cfp.jupytercon.com/2023/schedule/)
 
-During the conference I had the chance to present our project, the Virtual Research Environment/Data Lake A European effort under the EOSC Future project with a team of maintainers here at CERN.
+During the conference I had the chance to present our project, the Virtual Research Environment/Data Lake, a European effort under the EOSC Future project with a team of maintainers here at CERN.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wbJraW8X4ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Additionally, development sprints took place where developers and other project members could sit together to solve issues and think about new features and general ideas on how to move the project forward. I attended one of these sprints to help resolve issues and get help and feedback on some of the issues we have in our project.
 These sprints are super useful and are the perfect place to have in-depth technical discussions and find solutions for problems, but also to connect to the community.
 
-<img src="/assets/2023-05-16-jupytercon-2023-paris/JupyterCon2023_Sprint.jpg" height="400"/>
+![](/assets/2023-05-16-jupytercon-2023-paris/JupyterCon2023_Sprint.jpg)
 
 CERN with the EOSC Future project is a big user and beneficiary of the IPython and Jupyter products and is planning to get more involved with the upstream project. In case you are interested in collaborating or simply exploring ideas feel free to reach out to me!
