@@ -6,7 +6,8 @@ permalink: /publication-and-talks/
 
 ## Publications:
 
-* [Bracke, A., Gosein, D., Kürschner, M., Mayer, J., & Seefeld, J. (n.d.). Development of an Autonomous Robot for Detecting and Collecting Objects (p. 12) [Working Paper] URN: urn:nbn:de:bsz:953-opus-1006](https://nbn-resolving.org/urn:nbn:de:bsz:953-opus-1006)
+* [Bracke, A., Gosein, D., Kürschner, M., Mayer, J. and Seefeld, J., Development of an Autonomous Robot for Detecting and Collecting Objects, 2022](https://nbn-resolving.org/urn:nbn:de:bsz:953-opus-1006)
+* [Gazzarrini E., Garcia E., Gosein D., Vendrell Moya A., Kounelis A. Espinal X., The Virtual Research Environment: towards a comprehensive analysis platform, 2023](https://doi.org/10.48550/arXiv.2305.10166)
 
 ## Talks:
 
