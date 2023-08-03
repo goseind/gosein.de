@@ -45,7 +45,7 @@ These are just an excerpt of the many presentations, lightning talks and poster 
 
 During the conference I had the chance to present our project, the Virtual Research Environment/Data Lake, a European effort under the EOSC Future project with a team of maintainers here at CERN.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wbJraW8X4ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JGQpdivaNtI?start=1030" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Additionally, development sprints took place where developers and other project members could sit together to solve issues and think about new features and general ideas on how to move the project forward. I attended one of these sprints to help resolve issues and get help and feedback on some of the issues we have in our project.
 These sprints are super useful and are the perfect place to have in-depth technical discussions and find solutions for problems, but also to connect to the community.
