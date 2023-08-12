@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Understandable diagrams of the software architecture"
+title:  "Understandable Diagrams of Aoftware System Architecture"
 date:   2023-08-13
 categories: software architecture model diagrams views software engineering c4 systems design
 ---
@@ -59,4 +59,4 @@ For more information about C4 and the many ways you can use it, click here:
 * [Structurizr DSL cookbook](https://github.com/structurizr/dsl/tree/master/docs/cookbook)
 * [Language reference](https://github.com/structurizr/dsl/blob/master/docs/language-reference.md)
 
-I can also recommend [structurizr] (https://structurizr.com/), a dedicated platform with an online DSL editor and diagram download and embed.
+I can also recommend [Structurizr](https://structurizr.com/), a dedicated platform with an online DSL editor and diagram download and embed.
