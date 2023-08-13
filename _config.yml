@@ -51,6 +51,7 @@ plugins:
   - jekyll-gist
 
 permalink: /:title:output_ext
+show_excerpts: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
