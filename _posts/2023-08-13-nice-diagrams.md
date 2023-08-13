@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Understandable Diagrams of Aoftware System Architecture"
+title:  "Understandable Diagrams of Software System Architecture"
 date:   2023-08-13
 categories: software architecture model diagrams views software engineering c4 systems design
 ---
@@ -51,7 +51,7 @@ workspace "Ball Schubser" "A robot that pushes a ball" {
 }
 ```
 
-I find this a very practical approach to architecture design and it has helped me a lot as it provides an easy and fast way to create the first draft, but then allows you to build on that and create more sophisticated diagrams and look at them with different views to understand how things interact.
+I find this a very practical approach to architecture design, and it has helped me a lot as it provides an easy and fast way to create the first draft but then allows you to build on that and create more sophisticated diagrams and look at them with different views to understand how things interact.
 
 For more information about C4 and the many ways you can use it, click here:
 
