@@ -6,7 +6,7 @@ categories: terraform iac infrastructure-as-code flux gitops deployments kuberne
 ---
 
 As more and more organizations adopt Kubernetes for container orchestration, it has become increasingly important to have a robust and reliable tool for managing Kubernetes deployments. Flux, an open-source tool for GitOps continuous delivery, has emerged as one of the most popular tools for managing Kubernetes deployments. Terraform, another popular tool for infrastructure management, can be used to manage the installation and configuration of Flux. In this blog post, we will explore the benefits of using Terraform to maintain Flux.
-
+<!--more-->
 The [tf-flux](https://github.com/goseind/tf-flux) repository is a great resource for anyone looking to get started with using Terraform to manage Flux installations. The repository showcases the usage of the [terraform fluxcd provider](https://registry.terraform.io/providers/fluxcd/flux/latest), which allows users to create, manage, and delete Flux installations from Terraform.
 
 To get started, simply clone the repository and navigate to the `tf` directory. Run the command `terraform init` to initialize the Terraform environment. Then, run the command `terraform apply` and enter your GitHub organizations name, repository, and token. Once this is done, any new files in the `flux/cluster` directory will be synced with Flux, while the Flux installation itself is maintained by Terraform.

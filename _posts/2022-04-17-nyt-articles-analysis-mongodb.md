@@ -6,7 +6,7 @@ categories: mongo mongodb big-data kaggle mongodb-atlas mongodb-charts analysis 
 ---
 
 Inspired by [Spiegel Mining lecture by Daniel Kriesel](https://youtu.be/-YpwsdRKt8Q) I decided to try some mining my own using this [New York Times dataset from Kaggle](https://www.kaggle.com/datasets/benjaminawd/new-york-times-articles-comments-2020).
-
+<!--more-->
 In this example we will be concentrating on the articles dataset: `nyt-articles-2020.csv`. It contains more than *16K* articles with *11* features we can toy around with:
 
 * newsdesk

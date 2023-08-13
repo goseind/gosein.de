@@ -6,7 +6,7 @@ categories: software architecture model diagrams views software engineering c4 s
 ---
 
 In my search for an understandable and intuitive model for designing a software system architecture, I recently came across the C4 model. The C4 model makes use of Shneiderman's mantra, which is a simple concept for data visualisation and can be summarised as: "Overview first, zoom and filter, then detail on demand". I would like to demonstrate the use of the C4 model by illustrating the architecture of the [Autonomous Robot](https://gosein.de/autonomous-robot.html) described in a previous blog post.
-
+<!--more-->
 We start with what is called a system context diagram, which shows how the software fits into its environment, including user and system dependencies. For larger environments, the model provides a landscape view. The context clearly shows the two software systems, the containers running on the computer and the bot.
 
 ![](/assets/2023-08-13-nice-diagrams/structurizr-85399-SystemContext-001.png)

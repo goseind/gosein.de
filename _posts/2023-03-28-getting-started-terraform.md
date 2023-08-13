@@ -6,7 +6,7 @@ categories: terraform infrastructure-as-code variable declaration local values v
 ---
 
 Terraform is an open-source infrastructure as code tool that enables users to manage cloud resources efficiently. It is widely used by DevOps engineers to create, manage, and update their infrastructure as code. In a previous blog post, we discussed how to deploy a Kubernetes cluster and deploy a Helm Chart to it on OpenStack using Terraform. In this post, we will provide some quick and practical knowledge for working with Terraform.
-
+<!--more-->
 ## Terraform Installation on Linux
 
 Installation of Terraform is a straightforward process. Once you have installed the necessary dependencies, you can install Terraform using the following commands:

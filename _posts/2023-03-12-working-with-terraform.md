@@ -6,9 +6,8 @@ categories: terraform openstack kubernetes iac infrastructure as code helm chart
 ---
 
 Infrastructure as Code (IaC) has become a popular approach to managing IT infrastructure. This approach treats infrastructure components as code, allowing automated deployment and management of infrastructure resources across different platforms, with the advantage of having all this information stored and tracked in a repository.
-
 In this blog post, we want to explore [Terraform by HashiCorp](https://www.terraform.io/) - which is a popular tool for this purpose - by building a Kubernetes cluster on OpenStack and installing a Helm Chart on it.
-
+<!--more-->
 Terraform has its own language to define resources, called [HCL](https://github.com/hashicorp/hcl/blob/main/hclsyntax/spec.md). While all the resources could be written in one file, it makes sense to divide them into several `.tf` files. Terraform reads all these files within the folder/subfolder, when initialized. 
 We'll start with a `providers.tf` file, where we define the providers we'll use. Providers allow you to interact with the corresponding API to manage resources.
 

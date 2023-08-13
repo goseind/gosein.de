@@ -6,7 +6,7 @@ categories: cern technical studentship geneva escape eosc-future
 ---
 
 In September, I began my Technical Studentship at CERN in Geneva, and the time just flew right by. By now, it's been almost five months and time to reflect a bit on my experiences thus far. I'll also include some useful information on administrative and organizational things along the way, in case you're interested in applying to CERN or are starting to work here.
-
+<!--more-->
 When I think back, my journey to CERN started a while ago without me noticing. While I was always eagerly interested in natural sciences and the understanding of fundamental principles of physics I never thought I had it in me to work in that area. But while finishing my bachelor's degree in business informatics, I felt more and more the urge to explore these fundamental concepts and so I decided to inscribe myself into physics and mathematics courses at the University of Leipzig in Germany. After one year of exploring and learning new things, I followed up with my computer science master's at the Unversity of Applied Sciences in Mannheim. One of the reasons for choosing this master's degree was the opportunity to participate in a collaborative project between CERN and inno.space Mannheim. This project gave me the chance to visit CERN in November 2021 and made me aware of the opportunities for computer science students at CERN.
 
 <figure>

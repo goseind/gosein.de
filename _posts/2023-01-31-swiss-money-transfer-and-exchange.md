@@ -6,6 +6,7 @@ categories: swiss chf eur convert exchange transfer money revolut wise top-up yu
 ---
 
 Until very recently Revolut allowed free top-ups directly from Swiss debit cards as well as through Google Pay. Then end of last year they started charging a fee for debit cards, while still allowing to use them for free through Google Pay. This has now also stopped and there is de facto no free possibility anymore to transfer Swiss Fanks to a European Revolut Account. Theoretically, it is still possible to transfer CHF with a regular SEPA bank transfer, but my research showed that this could lead to unwanted fees by intermediaries. All in all, what I found was a bit intransparent, so in the end, I decided to go with WISE.
+<!--more-->
 My money transfer and exchange process now looks like this:
 
 1. Transfer money from yuh to the WISEs swiss bank account

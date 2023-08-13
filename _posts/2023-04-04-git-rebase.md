@@ -6,7 +6,7 @@ categories: git rebase reflog log oneline commit history
 ---
 
 If you're a developer working on a project using Git, you may have come across the term "rebasing" before. Rebasing is a powerful Git tool that can help you clean up your commit history and make it more organized.
-
+<!--more-->
 ## What is Rebasing?
 
 Rebasing is the process of moving a branch to a new base commit. This means that instead of merging changes from one branch to another, you rewrite the branch's commit history to make it appear as if it was created from the new base commit.

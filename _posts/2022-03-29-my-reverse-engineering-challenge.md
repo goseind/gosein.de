@@ -6,7 +6,7 @@ categories: reverse-engineering c challenge
 ---
 
 In the past semester, I took a lecture on Reverse Engineering. The goal of Reverse Engineering is to understand as much as possible about a piece of software or system while knowing very little about it. So in most cases, you start with just an executable. Those pieces of compiled software cannot simply be read and understood and in this blog post, I want to talk about the different approaches that can be used to analyze such files. I’ll be using a simple Capture the Flag Challenge I developed for others to try, to walk you through the process.
-
+<!--more-->
 Let’s start with the tools we need/can use:
 
 * [Ghidra](https://github.com/NationalSecurityAgency/ghidra)

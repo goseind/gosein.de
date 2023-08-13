@@ -8,7 +8,7 @@ categories: yolo yolov4 yolov5 robot autonomous robot ros turtlebot turtlebot3 b
 This past summer, I attended a lecture on autonomous mobile robots at my university in Mannheim. The topic fascinated me, and in this post, I want to share a few details about the project we performed and the paper we published.
 
 We aimed to build an autonomous robot capable of detecting and collecting given objects in a room and moving them to another given object (a target to search for and a goal essentially).
-
+<!--more-->
 As a base for our robot, we used a TurtleBot Burger, equipped with two servomotors, a microcontroller, and a Raspberry Pi for onboard computation. Additionally, we mounted a Raspberry Pi cam to the front of the TurtleBot as well as a fork to collect the objects. This is what the final result looked like:
 
 <img src="/assets/2022-09-27-autonomous-robot/ball-schubser_front_side_new_desc.jpg" height="400"/>

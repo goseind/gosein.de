@@ -10,7 +10,7 @@ categories: openscience datascience jupyter jupyternotebooks jupyterhub jupyterl
 Project Jupyter and IPython have no doubt revolutionized the way scientific computing is done. Today CERN and many other major organisations around the globe are using them to do their research. This article gives you the newest insights into Project Jupyter from its biggest community gathering in 2023 in Paris - the JupyterCon!
 
 ![](/assets/2023-05-16-jupytercon-2023-paris/JupyterCon2023_Talk.jpeg)
-
+<!--more-->
 Project Jupyter is a large open-source project born out of the IPython project for interactive data science and scientific computing with an international community. Jupyter products are used by many large institutes and corporations like NYU, MIT, Harvard, Berkeley, NASA, Netflix, AWS, and Google (and of course CERN) for their scientific and educational needs as well as many science experiments from various disciplines across the globe. Since its start in 2014, it has grown bigger by the year and revolutionized the way science is done.
 
 ![](/assets/2023-05-16-jupytercon-2023-paris/labpreview.jpg)
