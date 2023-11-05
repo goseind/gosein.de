@@ -4,11 +4,11 @@ title: About
 permalink: /about/
 ---
 
-### Hi there I'm Domenic 👋
+### Hi there I'm Dom 👋
 
-I'm a Computer Scientist currently working at CERN. I’m deeply interested in the fundamental laws of nature and my goal is to work in a field where I can contribute to technological progress.
+And I'm a software engineer. I’m deeply interested in the fundamental laws of nature and my goal is to work in a field where I can contribute to technological progress.
 
-To learn more about me also checkout:
+To learn more about me checkout:
 * [My GitHub](https://github.com/goseind)
 * [My LinkedIn](http://www.linkedin.com/in/goseind)
 * [My CV]({% link cv.md %})
