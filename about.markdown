@@ -11,7 +11,7 @@ And I'm a software engineer. I’m deeply interested in the fundamental laws of 
 To learn more about me checkout:
 * [My GitHub](https://github.com/goseind)
 * [My LinkedIn](http://www.linkedin.com/in/goseind)
-* [My CV]({% link cv.md %})
+* [My Résumé]({% link resume.md %})
 * [My Blog Posts]({% link index.markdown %})
 
 #### Credits
