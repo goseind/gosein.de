@@ -13,5 +13,5 @@ permalink: /publication-and-talks/
 
 ## List of Talks
 
-* The Virtual Research Environment, JupyterCon 2023, Cité des sciences et de l’industrie in Paris, [YouTube Recoding](https://youtu.be/JGQpdivaNtI?t=1030)
+* The Virtual Research Environment, JupyterCon 2023, Cité des sciences et de l’industrie in Paris, [YouTube Recording](https://youtu.be/JGQpdivaNtI?t=1030)
 * The Virtual Research Environment, IT Technical Forum and Computing Seminar, CERN, 2023, [Weblecture Recording](https://weblecture-player.web.cern.ch/?year=2023&id=1230107c0)
