@@ -8,7 +8,7 @@ categories: react react-native expo javascript cicd github-actions
 In this post, we'll delve into the structured process of creating React Native apps with Expo.
 
 Expo is a set of tools, libraries, and services built around React Native to simplify the development process. It provides a set of pre-built components and a development environment that eliminates the need for setting up and configuring native build tools. Expo also offers a range of services, such as a cloud build service, which allows you to build and deploy your app without the need for Xcode or Android Studio. Expo is particularly helpful for developers who want to focus on the JavaScript side of their application and reduce the complexity of native development tasks.
-
+<!--more-->
 Now, let's dive in and build.
 
 The easiest way to get started is with [Snack](https://snack.expo.dev), a convenient online platform provided by Expo that allows developers to experiment with and share React Native code in a browser-based environment including Android and iOS emulators powered by [Appetize](https://appetize.io/).
