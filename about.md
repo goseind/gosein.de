@@ -28,9 +28,9 @@ During my time as a software engineer, I've worked with numerous technologies an
 
 Besides that, I have worked with and have experience in embedded and robotic systems, working with microcontrollers like Arduiono and ROS, you can find one of the projects about an autonomous robot for detecting and collecting objects [here](https://nbn-resolving.org/urn:nbn:de:bsz:953-opus-1006).
 
-I also did some mobile software engineering and published an app for learning cryptography.
+I also did some mobile software engineering and published an app for learning cryptography, called [Krypto Learn]().
 
-But the list and my interests do not end there, I always enjoy trying new things and expanding my knowledge. So here is a incomplete list of things I have worked with: tbd
+But the list and my interests do not end there, I always enjoy trying new things and expanding my knowledge. So here is a incomplete list of things I have worked with:
 
 ## Contact
 
