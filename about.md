@@ -16,7 +16,7 @@ I also gave a talk about the project at CERN at JupyterCon 2023 in Paris, here t
 
 Previously, I worked for [EDEKA Digital](https://digital.edeka/), where I was part of the newly formed SRE team responsible for the infrastructure of a new inventory management system called [NEMO](https://digital.edeka/projekte/nemo/), which now runs as an app on Android devices in almost every EDEKA store in Germany.
 
-Before that, I worked as a consultant for [EY's Technology Risk division](https://www.ey.com), where I also completed my bachelor's degree in cooperation with the DHBW Mannheim. I wrote my bachelor thesis about query enhancements for automated IT audits for SAP systems.
+Before that, I worked as a consultant for [EY's Technology Risk division](https://www.ey.com), where I also completed my bachelor's degree in cooperation with the [Baden-Württemberg Cooperative State University (DHBW)](https://www.mannheim.dhbw.de/en). I wrote my bachelor thesis about automated IT audits for SAP systems.
 
 And before that, I worked for [KERN-LIEBERS](https://www.kern-liebers.com) in both Germany and Mexico. I was responsible for the administration of various hardware and software, ranging from servers to network devices and firewalls.
 
@@ -24,7 +24,7 @@ At KERN-LIEBERS I completed my apprenticeship as an IT Administrator with a focu
 
 I'm currently finishing my Master's degree in Computer Science with a focus on Software Engineering at [University of Applied Sciences Mannheim](https://www.english.hs-mannheim.de/the-university.html). I wrote [my thesis at CERN](http://cds.cern.ch/record/2872615?ln=en) on the IT architecture requirements for a future physics data processing and analysis system.
 
-**You can download my current resume (*last updated: 11/2023*) [here](/assets/resume_domenic_gosein_public.pdf)**
+**You can download my current resume (*last updated: 11/2023*) [here](/assets/resume_domenic_gosein_public.pdf)**.
 
 ## Things I know and have worked with
 
@@ -36,12 +36,12 @@ I also did some mobile software engineering and published an app for learning cr
 
 But the list and my interests do not end there, I always like to try new things and expand my knowledge. So here is an incomplete list of things I have worked with, sorted by topic:
 
-* Languages: **Python**, Bash (Shell), JavaScript, C++, C, YAML
-* DevOps/SRE: **Kubernetes**, OpenStack, GCP, Azure, Docker, Helm, Flux, Terraform, GitHub Actions, GitLab CI/CD, Grafana, Kibana, Datadog, Git
-* Robotics: ROS
-* Mobile/Web: React Native JS, Expo, Google Play Console, GCP, Python Flask, 
-* DBs: PostgreSQL
-* Operating Systems, Servers and Networking: Linux/Unix, Microsoft/Windows servers, Cisco, PaloAlto, HP servers, VMware
+* Languages/General: **Python**, **Git**, **Bash (Shell)**, YAML, JavaScript, C++, C
+* DevOps/SRE: **Kubernetes**, **Docker**, **Helm**, **Terraform**, **GitHub Actions**, OpenStack, GCP, Azure, GitLab CI/CD, Grafana, Kibana, Datadog
+* Robotics: **ROS**
+* Mobile/Web: **React Native JS**, Expo, Google Play Console, GCP, Python Flask
+* DBs: **PostgreSQL**
+* Operating Systems, Servers and Networking: **Linux/Unix**, Microsoft/Windows servers, Cisco, PaloAlto, HP servers, VMware
 
 ## How to reach me
 
