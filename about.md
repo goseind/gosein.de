@@ -8,9 +8,11 @@ permalink: /about/
 
 My curiosity about all things fundamental to understanding our universe and human progress led me to work as a software and DevOps engineer at [CERN](https://home.cern/), where I was able to contribute to some of the incredible software CERN builds to store and analyze data. I enjoy understanding and learning about the entire tech stack and thrive in international teams.
 
-## Some History
+## Some history about me
 
 I worked as a software and DevOps engineer for [CERN](https://home.cern/), where I was responsible for the deployment of a European open science federated data infrastructure that allowed scientists from all over Europe to share and analyze data from experiments. My team published a [paper on the platform](https://arxiv.org/abs/2305.10166). Along the way, I was able to contribute to other open source projects at CERN, such as [Rucio](http://rucio.cern.ch/) and [REANA](https://reana.io/).
+
+I also gave a talk about the project at CERN at JupyterCon 2023 in Paris, here the [YouTube Recording](https://youtu.be/JGQpdivaNtI?t=1030).
 
 Previously, I worked for [EDEKA Digital](https://digital.edeka/), where I was part of the newly formed SRE team responsible for the infrastructure of a new inventory management system called [NEMO](https://digital.edeka/projekte/nemo/), which now runs as an app on Android devices in almost every EDEKA store in Germany.
 
@@ -22,23 +24,40 @@ At KERN-LIEBERS I completed my apprenticeship as an IT Administrator with a focu
 
 I'm currently finishing my Master's degree in Computer Science with a focus on Software Engineering at [University of Applied Sciences Mannheim](https://www.english.hs-mannheim.de/the-university.html). I wrote [my thesis at CERN](http://cds.cern.ch/record/2872615?ln=en) on the IT architecture requirements for a future physics data processing and analysis system.
 
-## Things I know and worked with
+**You can download my current resume (*last updated: 11/2023*) [here](/assets/resume_domenic_gosein_public.pdf)**
+
+## Things I know and have worked with
 
 During my time as a software engineer, I've worked with numerous technologies and tools. As for programming, I'm most experienced in Python. I have worked a lot with Kubernetes and surrounding technologies.
 
 Besides that, I have worked with and have experience in embedded and robotic systems, working with microcontrollers like Arduiono and ROS, you can find one of the projects about an autonomous robot for detecting and collecting objects [here](https://nbn-resolving.org/urn:nbn:de:bsz:953-opus-1006).
 
-I also did some mobile software engineering and published an app for learning cryptography, called [Krypto Learn]().
+I also did some mobile software engineering and published an app for learning cryptography, called [Krypto Learn](https://play.google.com/store/apps/details?id=com.dom325345.kryptolearn).
 
-But the list and my interests do not end there, I always enjoy trying new things and expanding my knowledge. So here is a incomplete list of things I have worked with:
+But the list and my interests do not end there, I always like to try new things and expand my knowledge. So here is an incomplete list of things I have worked with, sorted by topic:
 
-## Contact
+* Languages: **Python**, Bash (Shell), JavaScript, C++, C, YAML
+* DevOps/SRE: **Kubernetes**, OpenStack, GCP, Azure, Docker, Helm, Flux, Terraform, GitHub Actions, GitLab CI/CD, Grafana, Kibana, Datadog, Git
+* Robotics: ROS
+* Mobile/Web: React Native JS, Expo, Google Play Console, GCP, Python Flask, 
+* DBs: PostgreSQL
+* Operating Systems, Servers and Networking: Linux/Unix, Microsoft/Windows servers, Cisco, PaloAlto, HP servers, VMware
 
-The best way to contact me is through LinkedIn, and I'm sorry if it sometimes takes a while for me to respond.
+## How to reach me
+
+The best way to contact me is through [LinkedIn](https://www.linkedin.com/in/goseind/), and I'm sorry if it sometimes takes a while for me to respond.
 
 ## In my free time
 
-tbd
+In my free time I enjoy rock climbing, mountain biking and mountaineering. When it snows, I switch from my hiking boots to my skis.
+
+I also play the guitar, my favorite artist and inspiration is [Carlos Santana](https://open.spotify.com/intl-de/track/0GF3otbUk5UX64xnPzGyve?si=582bc403019f4362).
+
+## Where I have lived so far
+
+I have been incredibly lucky to not only travel the world, but to live in (1) Queretaro, Mexico, (2) Mannheim and (3) Leipzig, Germany, and (4) Geneva, Switzerland.
+
+![Alt text](assets/map.png)
 
 
-The favicon for this page was created with materials from [Kiranshastry on Flaticon](https://www.flaticon.com/free-icons/data).
+*The favicon for this page was created with materials from [Kiranshastry on Flaticon](https://www.flaticon.com/free-icons/data) and the map with [mapcustomizer](https://www.mapcustomizer.com/).*
