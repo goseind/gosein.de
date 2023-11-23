@@ -39,7 +39,7 @@ google_site_verification: 6yjgiiATzCxUkZ0On5KXtnml3PEPps0L4Lo_RtUq3YY
 # Build settings
 remote_theme: jekyll/minima # set up remote_theme instead of explicitly setting the theme version in the Gemfile
 minima:
-  skin: solarized
+  skin: auto
   social_links:
     - { platform: github,  user_url: "https://github.com/goseind" }
     - { platform: twitter, user_url: "https://twitter.com/dogosein" }
