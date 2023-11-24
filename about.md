@@ -34,7 +34,17 @@ Besides that, I have worked with and have experience in embedded and robotic sys
 
 I also did some mobile software engineering and published an app for learning cryptography, called [Krypto Learn](https://play.google.com/store/apps/details?id=com.dom325345.kryptolearn).
 
-But the list and my interests do not end there, I always like to try new things and expand my knowledge. So here is an incomplete list of things I have worked with, sorted by topic:
+But the list and my interests do not end there, I always like to try new things and expand my knowledge. So here is an incomplete list of things I have worked with, in the form of a table to give it some structure.
+
+|  | Skills |
+| ------------- | ------------- |
+| Programming/Scripting  | Python, JavaScript, Bash (Shell)  |
+| Databases  | PostgreSQL  |
+| Web/Mobile | React/React Native |
+| Cloud/Cloud-native | **Kubernetes**, **Docker**, **Helm**, **Terraform**, **GitHub Actions**, OpenStack, GCP, Azure, GitLab CI/CD, Grafana, Kibana, Datadog, YAML |
+| Embedded | ROS/ROS2 |
+| Generall  | Linux/Unix, Git, Jira, GitHub, GitLab  |
+| Methodologies | DevOps, SRE, Clean Code, Requirements Engineering, Design Thinking |
 
 * Languages/General: **Python**, **Git**, **Bash (Shell)**, YAML, JavaScript, C++, C
 * DevOps/SRE: **Kubernetes**, **Docker**, **Helm**, **Terraform**, **GitHub Actions**, OpenStack, GCP, Azure, GitLab CI/CD, Grafana, Kibana, Datadog
