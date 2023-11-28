@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "TIL: Automated Python Script Reloading with Watchdog"
-date:   2023-11-28
+date:   2023-11-28 17:21
 categories: python watchdog watchmedo pip docker compose bash file system update
 ---
 
 [What is a TIL?](2023-11-28-til-today-i-learned.md)
 
 Today I learnt about [watchdog](https://pypi.org/project/watchdog/), a Python utility that allows you to monitor file system events, useful for example if you want to restart a script when changes are made to it. I used it with Docker Compose to run a Python program every time I changed the file.
-
+<!--more-->
 Create a small bash script to run *watchmedo*, specifying the directory, pattern or single file you want to watch (in this case using the `$1` variable to pass the specific file from the Docker Compose later):
 
 ```bash
