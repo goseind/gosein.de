@@ -42,8 +42,9 @@ minima:
   skin: auto
   social_links:
     - { platform: github,  user_url: "https://github.com/goseind" }
-    - { platform: twitter, user_url: "https://twitter.com/dogosein" }
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/goseind/" }
+    - { platform: twitter, user_url: "https://twitter.com/dogosein" }
+    - { platform: stackoverflow, user_url: "https://stackoverflow.com/users/11422992/dom" }
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
