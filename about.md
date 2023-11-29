@@ -4,9 +4,11 @@ title: About Me
 permalink: /about/
 ---
 
-![Me](assets/me.png)
+![Me as Speaker at JupyterCon 2023](assets/me.png)
 
 My curiosity about all things fundamental to understanding our universe and human progress led me to work as a software and DevOps engineer at [CERN](https://home.cern/), where I was able to contribute to some of the incredible software CERN builds to store and analyze data. I enjoy understanding and learning about the entire tech stack and thrive in international teams.
+
+*The photo above captures me during JupyterCon 2023 in Paris, where I showcased the accomplishments of my team at CERN. Learn more about it in [this post]({% post_url 2023-05-16-jupytercon-2023-paris %}).*
 
 ## Some history about me
 

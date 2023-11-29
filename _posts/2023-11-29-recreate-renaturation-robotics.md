@@ -5,7 +5,7 @@ date:   2023-11-29
 categories: renaturation drone robot robotics system
 ---
 
-I've been meaning to share this update on the ReCreate project, a collaborative initiative that unfolded in 2021/22 at [inno-space Mannheim](https://inno-space.de/projects/gtg/) in partnership with CERN. The project's mission was to employ design thinking and various methodologies to ideate and prototype a solution addressing challenges within the [UN Sustainable Development Goals](https://sdgs.un.org/goals), specifically focusing on [Goal 15 - Life on Land](https://sdgs.un.org/goals/goal15), which states: *"Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss"*. Without further ado, let me present the outcome and pitch the resulting idea to you.
+I've been meaning to share this update on the ReCreate project, a collaborative initiative that unfolded in 2021/22 at [inno-space Mannheim](https://inno-space.de/projects/gtg/) in partnership with CERN. The project's mission was to employ design thinking and various methodologies to ideate and prototype a solution addressing challenges within the [UN Sustainable Development Goals](https://sdgs.un.org/goals), specifically focusing on [Goal 15 - Life on Land](https://sdgs.un.org/goals/goal15), which states: *"Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss"*. Without further ado, let me present the outcome and pitch the resulting idea to you.  
 <!--more-->
 ![ReNate and SeDrone](../assets/2023-11-30-recreate-renaturation-robotics/ReNate_and_SeDrone.jpg)
 
