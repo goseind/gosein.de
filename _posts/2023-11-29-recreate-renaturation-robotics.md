@@ -5,6 +5,8 @@ date:   2023-11-29
 categories: renaturation drone robot robotics system
 ---
 
+I've been meaning to share this update on the ReCreate project, a collaborative initiative that unfolded in 2021/22 at [inno-space Mannheim](https://inno-space.de/projects/gtg/) in partnership with CERN. The project's mission was to employ design thinking and various methodologies to ideate and prototype a solution addressing challenges within the [UN Sustainable Development Goals](https://sdgs.un.org/goals), specifically focusing on [Goal 15 - Life on Land](https://sdgs.un.org/goals/goal15), which states: *"Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss"*. Without further ado, let me present the outcome and pitch the resulting idea to you.
+<!--more-->
 ![ReNate and SeDrone](../assets/2023-11-30-recreate-renaturation-robotics/ReNate_and_SeDrone.jpg)
 
 In the intricate web of environmental conservation and technological innovation, ReCreate emerges as a comprehensive system composed of three pivotal components: ReNate, SeDrone, and VeDA. This collective ensemble works synergistically to investigate and evaluate abandoned landscapes, formulating a tailored renaturation strategy precisely attuned to each unique terrain.
@@ -20,3 +22,9 @@ At its core, ReCreate embraces a blend of autonomy and human involvement, epitom
 While ReCreate operates as a partially autonomous system, it is imperative to recognize the indispensable role of human expertise in its functionality. Humans play a pivotal part in the planning and execution phases, bringing a nuanced understanding of local ecosystems, cultural considerations, and ethical dimensions. The collaborative effort between technology and human insight amplifies the effectiveness and sustainability of the renaturation initiatives.
 
 In essence, ReCreate exemplifies a holistic approach to environmental stewardship, seamlessly integrating the precision of technology with the wisdom of human experience. As we navigate the complex terrain of ecological restoration, ReCreate stands as a beacon, demonstrating that the future of sustainable ecosystems lies in the convergence of nature and cutting-edge innovation.
+
+This video illustrates the system in operation.
+
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/708193510?h=33977d2a6d" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+
+**Discover additional details about the project [here](https://cbi.dfm.org.au/project/gtg/)!**
