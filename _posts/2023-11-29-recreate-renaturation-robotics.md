@@ -1,13 +1,11 @@
 ---
 layout: post
 title:  "ReCreate: Bridging Nature and Technology for Sustainable Renaturation"
-date:   2023-11-30
+date:   2023-11-29
 categories: renaturation drone robot robotics system
 ---
 
 ![ReNate and SeDrone](../assets/2023-11-30-recreate-renaturation-robotics/ReNate_and_SeDrone.jpg)
-
-Title: "ReCreate: Bridging Nature and Technology for Sustainable Renaturation"
 
 In the intricate web of environmental conservation and technological innovation, ReCreate emerges as a comprehensive system composed of three pivotal components: ReNate, SeDrone, and VeDA. This collective ensemble works synergistically to investigate and evaluate abandoned landscapes, formulating a tailored renaturation strategy precisely attuned to each unique terrain.
 
