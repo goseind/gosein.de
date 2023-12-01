@@ -6,7 +6,7 @@ categories: datadog github api guthub-actions actions workflow metric monitoring
 ---
 
 Some time ago, I crafted a [GitHub Actions for a custom Datadog metric](https://github.com/marketplace/actions/workflow-usage-datadog-custom-metric) to meticulously monitor GitHub minutes usage for a substantial project. The primary objective was to gain a precise understanding of how many minutes per workflow were consumed within the billing period, enabling us to pinpoint areas for improvement.
-
+<!--more-->
 The workflow triggers a [GitHub API call to fetch the current billing minutes](https://docs.github.com/en/rest/actions/workflows?apiVersion=2022-11-28#get-workflow-usage) for the workflow. Subsequently, this value undergoes conversion and is transmitted to the [Datadog API](https://docs.datadoghq.com/metrics/custom_metrics/). The outcome? You can elegantly display it, perhaps as a time series or table, showcasing the total usage throughout the ongoing billing cycle.
 
 Here's the YAML action configuration:
