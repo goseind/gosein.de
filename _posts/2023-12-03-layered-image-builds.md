@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "JupyterHub Image Building: A Layered Approach for Customized User Environments"
-date:   2023-23-03
+date:   2023-12-03
 categories: stackoverflow jupyterhub docker github-actions github build images configmap k8s jupyter profiles
 ---
 
