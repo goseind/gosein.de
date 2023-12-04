@@ -25,6 +25,7 @@ author:
   name: Domenic Gosein
   #email: your-email@example.com
 # logo: 
+copyright: "Domenic Gosein"
 tagline: Software engineering, work and life
 description: A blog dedicated to software engineering, work and life.
 baseurl: "" # the subpath of your site, e.g. /blog
