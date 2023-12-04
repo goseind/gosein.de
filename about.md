@@ -26,8 +26,6 @@ At KERN-LIEBERS I completed my apprenticeship as an IT Administrator with a focu
 
 I'm currently finishing my Master's degree in Computer Science with a focus on Software Engineering at [University of Applied Sciences Mannheim](https://www.english.hs-mannheim.de/the-university.html). I wrote [my thesis at CERN](http://cds.cern.ch/record/2872615?ln=en) on the IT architecture requirements for a future physics data processing and analysis system.
 
-**You can download my current resume (*last updated: 11/2023*) [here](/assets/resume_domenic_gosein_public.pdf)**.
-
 ## Things I know and have worked with
 
 During my time as a software engineer, I've worked with numerous technologies and tools. As for programming, I'm most experienced in Python. I have worked a lot with Kubernetes and surrounding technologies.
@@ -45,9 +43,9 @@ But the list and my interests do not end there, I always like to try new things 
 * DBs: **PostgreSQL**
 * Operating Systems, Servers and Networking: **Linux/Unix**, Microsoft/Windows servers, Cisco, PaloAlto, HP servers, VMware
 
-## How to reach me
+## How to reach me (and get my CV)
 
-The best way to contact me is through [LinkedIn](https://www.linkedin.com/in/goseind/), and I'm sorry if it sometimes takes a while for me to respond.
+The best way to contact me is through [LinkedIn](https://www.linkedin.com/in/goseind/), and I'm sorry if it sometimes takes a while for me to respond. This way you can also ask for my CV.
 
 ## In my free time
 
