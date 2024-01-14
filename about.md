@@ -6,13 +6,15 @@ permalink: /about/
 
 ![Me as Speaker at JupyterCon 2023](assets/me.png)
 
-My curiosity about all things fundamental to understanding our universe and human progress led me to work as a software and DevOps engineer at [CERN](https://home.cern/), where I was able to contribute to some of the incredible software CERN builds to store and analyze data. I enjoy understanding and learning about the entire tech stack and thrive in international teams.
+With over 11 years in the IT industry and experience in various roles across industries and locations, I bring a diverse technical background to the table. My expertise ranges from systems administration tasks, such as managing bare-metal servers and networks, to navigating the realm of cloud-native infrastructure. While I excel in DevOps and SRE, my innate curiosity drives me to constantly explore new concepts and technologies. I thrive in dynamic, international teams and consider myself a very structured and open-minded person.
 
 *The photo above captures me during JupyterCon 2023 in Paris, where I showcased the accomplishments of my team at CERN. Learn more about it in [this post]({% post_url 2023-05-16-jupytercon-2023-paris %}).*
 
 ## Some history about me
 
-I worked as a software and DevOps engineer for [CERN](https://home.cern/), where I was responsible for the deployment of a European open science federated data infrastructure that allowed scientists from all over Europe to share and analyze data from experiments. My team published a [paper on the platform](https://arxiv.org/abs/2305.10166). Along the way, I was able to contribute to other open source projects at CERN, such as [Rucio](http://rucio.cern.ch/) and [REANA](https://reana.io/).
+My curiosity about all things fundamental to understanding our universe and human progress led me to work as a software and DevOps engineer at [CERN](https://home.cern/), where I was able to contribute to some of the incredible software CERN builds to store and analyze data.
+
+As a Software/DevOps engineer, I was responsible for the deployment of a European open science federated data infrastructure that allowed scientists from all over Europe to share and analyze data from experiments. My team published a [paper on the platform](https://arxiv.org/abs/2305.10166). Along the way, I was able to contribute to other open source projects at CERN, such as [Rucio](http://rucio.cern.ch/) and [REANA](https://reana.io/).
 
 I also gave a talk about the project at CERN at JupyterCon 2023 in Paris, here the [YouTube Recording](https://youtu.be/JGQpdivaNtI?t=1030).
 
