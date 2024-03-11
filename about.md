@@ -8,6 +8,8 @@ permalink: /about/
 
 With over 11 years in the IT industry and experience in various roles across industries and locations, I bring a diverse technical background to the table. My expertise ranges from systems administration tasks, such as managing bare-metal servers and networks, to navigating the realm of cloud-native infrastructure. While I excel in DevOps and SRE, my innate curiosity drives me to constantly explore new concepts and technologies. I thrive in dynamic, international teams and consider myself a very structured and open-minded person.
 
+I am currently working as a Platform Engineer for [jambit](https://jambit.com/) in the city of Munich.
+
 *The photo above captures me during JupyterCon 2023 in Paris, where I showcased the accomplishments of my team at CERN. Learn more about it in [this post]({% post_url 2023-05-16-jupytercon-2023-paris %}).*
 
 **Table of contents:**
@@ -19,7 +21,7 @@ With over 11 years in the IT industry and experience in various roles across ind
 
 ## Some history about me
 
-My curiosity about all things fundamental to understanding our universe and human progress led me to work as a Software/DevOps engineer at [CERN](https://home.cern/), where I was able to contribute to some of the incredible software CERN builds to store and analyze data.
+Before taking up my role as Platform Engineer in Munich, my curiosity about all things fundamental to understanding our universe and human progress led me to work as a Software/DevOps engineer at [CERN](https://home.cern/), where I was able to contribute to some of the incredible software CERN builds to store and analyze data.
 
 As a Software/DevOps engineer, I was responsible for the deployment of a European open science federated data infrastructure that allowed scientists from all over Europe to share and analyze data from experiments. My team published a [paper on the platform](https://arxiv.org/abs/2305.10166). Along the way, I was able to contribute to other open source projects at CERN, such as [Rucio](http://rucio.cern.ch/) and [REANA](https://reana.io/).
 
@@ -33,7 +35,7 @@ And before that, I worked for [KERN-LIEBERS](https://www.kern-liebers.com) in bo
 
 At KERN-LIEBERS I completed my apprenticeship as an IT Administrator with a focus on systems integration.
 
-I'm currently finishing my Master's degree in Computer Science with a focus on Software Engineering at [University of Applied Sciences Mannheim](https://www.english.hs-mannheim.de/the-university.html). I wrote [my thesis at CERN](http://cds.cern.ch/record/2872615?ln=en) on the IT architecture requirements for a future physics data processing and analysis system.
+I obtained my Master's degree in Computer Science with a specialisation in Software Engineering from [University of Applied Sciences Mannheim](https://www.english.hs-mannheim.de/the-university.html). I wrote [my thesis at CERN](http://cds.cern.ch/record/2872615?ln=en) on the IT architecture requirements for a future physics data processing and analysis system.
 
 ## Things I know and have worked with
 
